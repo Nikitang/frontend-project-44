@@ -19,7 +19,6 @@ function brain() {
 
     const answer = readlineSync.question('Your answer: ');
 
-
     if (randomNum % 2 === 0) {
       if (answer === 'yes') {
         console.log('Correct!');
