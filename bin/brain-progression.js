@@ -45,14 +45,14 @@ function brainProgress() {
 
     const correctResult = Number(splicToStr);
 
-    const playerAnswer = readlineSync.question(`Question: ${spawnProgress.join(' ')} `);
+    console.log(`Question: ${spawnProgress.join(' ')} `);
 
-    console.log(`Your answer: ${playerAnswer}`);
+    const answer = readlineSync.question('Your answer: ');
 
-    if (correctResult === Number(playerAnswer)) {
+    if (correctResult === Number(answer)) {
       console.log('Correct!');
     } else {
-      console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctResult}'.
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctResult}'.
       Let's try again, ${playerName}!`);
       return;
     }

@@ -27,17 +27,17 @@ function gameNOD() {
 
     const gcdQuestion = `${randomNum1} ${randomNum2}`;
 
-    const questionGCD = readlineSync.question(`Question: ${gcdQuestion} `);
+    console.log(`Question: ${gcdQuestion} `);
 
-    console.log(`Your answer: ${questionGCD}`);
+    const answer = readlineSync.question('Your answer: ');
 
     const loadGCD = takeNod(randomNum1, randomNum2);
 
-    if (Number(questionGCD) === loadGCD) {
+    if (Number(answer) === loadGCD) {
       console.log('Correct!');
     } else {
-      console.log(`'${questionGCD}' is wrong answer ;(. Correct answer was '${loadGCD}'.
-        Let's try again, ${playerName}!`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${loadGCD}'.
+      Let's try again, ${playerName}!`);
       return;
     }
   }

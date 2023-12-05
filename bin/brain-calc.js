@@ -2,6 +2,8 @@
 import readlineSync from 'readline-sync';
 
 function brainCalc() {
+  console.log('Welcome to the Brain Games!');
+
   const name2 = readlineSync.question('May I have your name?: ');
 
   console.log(`Hello, ${name2}`);
@@ -31,15 +33,15 @@ function brainCalc() {
 
     const calcQuest = `${randomNum1} ${arr[randomSign]} ${randomNum2}`;
 
-    const answer = readlineSync.question(`Question: ${calcQuest} `);
+    console.log(`Question: ${calcQuest} `);
 
-    console.log(`Your answer: ${answer}`);
+    const answer = readlineSync.question('Your answer: ');
 
     if (Number(answer) === correctResult) {
       console.log('Correct!');
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctResult}.
-        Let's try again, ${name2}!`);
+      Let's try again, ${name2}!`);
       return;
     }
   }

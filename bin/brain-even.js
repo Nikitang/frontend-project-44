@@ -23,13 +23,15 @@ function brain() {
       if (answer === 'yes') {
         console.log('Correct!');
       } else {
-        return `'${answer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${playerName}!`;
+        return `'${answer}' is wrong answer ;(. Correct answer was 'yes'. 
+        Let's try again, ${playerName}!`;
       }
     } else if (randomNum % 2 !== 0) {
       if (answer === 'no') {
         console.log('Correct!');
       } else {
-        return `'${answer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${playerName}!`;
+        return `'${answer}' is wrong answer ;(. Correct answer was 'no'. 
+        Let's try again, ${playerName}!`;
       }
     }
   }
