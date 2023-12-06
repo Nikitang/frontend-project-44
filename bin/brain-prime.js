@@ -4,9 +4,9 @@ import readlineSync from 'readline-sync';
 import consoleName from '../src/cli.js';
 
 function primeNumber(number) {
-  
-  for (let i = 2; i < number; i += 1) {
-    if (number % i === 0) return false;
+
+  for (let s = 2; s < number; s += 1) {
+    if (number % s === 0) return false;
   }
   return number !== 1;
 }
@@ -21,6 +21,7 @@ function brainPrime() {
   console.log('Find the greatest common divisor of given numbers.');
 
   for (let g = 0; g < 3; g += 1) {
+
     const randomNum1 = Math.floor(Math.random() * (30 - 1 + 1)) + 1;
 
     console.log(`Question: ${randomNum1}`);
