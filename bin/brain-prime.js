@@ -5,8 +5,8 @@ import consoleName from '../src/cli.js';
 
 function primeNumber(number) {
 
-  for (let s = 2; s < number; s += 1) {
-    if (number % s === 0) return false;
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) return false;
   }
   return number !== 1;
 }
@@ -18,7 +18,7 @@ function brainPrime() {
 
   console.log(`Hello, ${playerName}`);
 
-  console.log('Find the greatest common divisor of given numbers.');
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
   for (let g = 0; g < 3; g += 1) {
 
